@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body>
+
+    <h2 class="result">Hello </h2>
+
+<script>
+$(document).ready(function(){
+    $.getJSON("/test.json", function(json) {
+        $(".result").append(json.hello);
+    });
+});
+</script>
+</body>
+</html>
+
